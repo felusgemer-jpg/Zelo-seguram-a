@@ -1,0 +1,49 @@
+<html lang="pt-BR"> 
+    <head> <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Zelo Segurança e Automação</title> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> 
+    
+    <style> 
+    
+    *{ 
+
+        margin:0; padding:0;
+     box-sizing:border-box; 
+     font-family:'Poppins',sans-serif;
+      }
+      
+      html{ 
+        scroll-behavior:smooth;
+         } 
+         
+         body{ background:#090909;
+          color:white; overflow-x:hidden;
+           } 
+           
+           /* FUNDO ANIMADO */ 
+           
+           body::before{ content:'';
+            position:fixed;
+            width:500px;
+            height:500px;
+            background:gold;
+            filter:blur(220px);
+             opacity:0.08; top:-200px; left:-100px; z-index:-1; } body::after{ content:''; position:fixed; width:500px; height:500px; background:#ffcc00; filter:blur(220px); opacity:0.05; bottom:-250px; right:-150px; z-index:-1; } /* MENU */ header{ width:100%; position:fixed; top:0; left:0; z-index:1000; background:rgba(0,0,0,0.45); backdrop-filter:blur(12px); border-bottom:1px solid rgba(255,215,0,0.2); } .container{ width:90%; margin:auto; } .navbar{ display:flex; justify-content:space-between; align-items:center; padding:18px 0; } .logo{ display:flex; align-items:center; gap:15px; } .logo img{ width:80px; filter:drop-shadow(0 0 15px rgba(255,215,0,0.5)); transition:0.4s; } .logo img:hover{ transform:scale(1.08); } .logo h1{ color:gold; font-size:30px; font-weight:700; } nav ul{ display:flex; list-style:none; gap:30px; } nav ul li a{ text-decoration:none; color:white; font-weight:500; transition:0.3s; position:relative; } nav ul li a::after{ content:''; position:absolute; width:0%; height:2px; background:gold; left:0; bottom:-6px; transition:0.3s; } nav ul li a:hover::after{ width:100%; } nav ul li a:hover{ color:gold; } /* HERO */ .hero{ min-height:100vh; background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1600&q=80'); background-size:cover; background-position:center; display:flex; justify-content:center; align-items:center; text-align:center; padding:30px; } .hero-content{ animation:fadeUp 1.2s ease; } .hero-content h2{ font-size:75px; color:gold; margin-bottom:25px; text-shadow:0 0 20px rgba(255,215,0,0.3); } .hero-content p{ font-size:24px; max-width:850px; margin:auto; line-height:1.7; margin-bottom:40px; } /* BOTÃO */ .btn{ display:inline-block; padding:18px 45px; background:linear-gradient(45deg,gold,#ffcc00); color:black; text-decoration:none; border-radius:12px; font-weight:700; font-size:18px; transition:0.4s; box-shadow: 0 0 20px rgba(255,215,0,0.4), 0 0 40px rgba(255,215,0,0.1); } .btn:hover{ transform:translateY(-5px) scale(1.05); box-shadow: 0 0 30px rgba(255,215,0,0.6), 0 0 60px rgba(255,215,0,0.2); } /* TITULOS */ .section-title{ text-align:center; font-size:52px; color:gold; margin-bottom:70px; } /* SERVIÇOS */ .services{ padding:120px 0; } .services-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:35px; } .card{ background:rgba(255,255,255,0.04); border:1px solid rgba(255,215,0,0.15); backdrop-filter:blur(10px); padding:40px; border-radius:20px; text-align:center; transition:0.5s; } .card:hover{ transform:translateY(-12px); border-color:gold; box-shadow:0 0 30px rgba(255,215,0,0.15); } .card i{ font-size:55px; color:gold; margin-bottom:25px; } .card h3{ margin-bottom:18px; font-size:28px; } .card p{ line-height:1.7; opacity:0.9; } /* SOBRE */ .about{ padding:120px 0; } .about-content{ display:flex; align-items:center; gap:60px; flex-wrap:wrap; } .about-content img{ width:100%; max-width:500px; border-radius:20px; border:2px solid rgba(255,215,0,0.4); box-shadow:0 0 30px rgba(255,215,0,0.15); } .about-text{ flex:1; } .about-text h2{ font-size:52px; color:gold; margin-bottom:25px; } .about-text p{ font-size:20px; line-height:1.9; opacity:0.92; } /* GALERIA */ .gallery{ padding:120px 0; } .gallery-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; } .gallery-grid img, .video-galeria{ width:100%; height:300px; object-fit:cover; border-radius:18px; border:2px solid rgba(255,215,0,0.25); transition:0.5s; } .gallery-grid img:hover, .video-galeria:hover{ transform:scale(1.03); box-shadow:0 0 30px rgba(255,215,0,0.2); } /* CONTATO */ .contact{ padding:120px 0; } .contact-box{ background:rgba(255,255,255,0.04); border:1px solid rgba(255,215,0,0.15); backdrop-filter:blur(12px); padding:60px; border-radius:25px; text-align:center; } .contact-box p{ margin:20px 0; font-size:22px; } .contact-box i{ color:gold; } /* INSTAGRAM */ .instagram{ margin-top:40px; text-align:center; } .instagram a{ color:gold; text-decoration:none; font-size:24px; transition:0.3s; } .instagram a:hover{ color:white; } /* MAPA */ .map{ margin-top:50px; overflow:hidden; border-radius:20px; } /* FOOTER */ footer{ background:black; text-align:center; padding:35px; border-top:1px solid rgba(255,215,0,0.2); } /* WHATSAPP */ .whatsapp{ position:fixed; right:25px; bottom:25px; width:70px; height:70px; border-radius:50%; background:#25d366; display:flex; justify-content:center; align-items:center; color:white; font-size:38px; text-decoration:none; z-index:1000; box-shadow: 0 0 20px rgba(37,211,102,0.5); transition:0.3s; } .whatsapp:hover{ transform:scale(1.1); } /* ANIMAÇÃO */ @keyframes fadeUp{ from{ opacity:0; transform:translateY(50px); } to{ opacity:1; transform:translateY(0); } } /* RESPONSIVO */ @media(max-width:900px){ nav{ display:none; } .hero-content h2{ font-size:48px; } .hero-content p{ font-size:18px; } .section-title{ font-size:38px; } } </style> </head> <body> <!-- MENU --> <header> <div class="container navbar"> <div class="logo"> <img src="6.png" alt="Logo Zelo Segurança"> <h1>Zelo Segurança</h1> </div> <nav> <ul> <li><a href="#inicio">Início</a></li> <li><a href="#servicos">Serviços</a></li> <li><a href="#sobre">Sobre</a></li> <li><a href="#galeria">Projetos</a></li> <li><a href="#contato">Contato</a></li> </ul> </nav> </div> </header> <!-- HERO --> <section class="hero" id="inicio"> <div class="hero-content"> <h2>Segurança e Automação Inteligente</h2> <p> Protegendo sua casa e empresa com tecnologia, qualidade e confiança. </p> <a href="https://wa.me/55041997375054" class="btn"> Solicitar Orçamento </a> </div> </section> <!-- SERVIÇOS --> <section class="services" id="servicos"> <div class="container"> <h2 class="section-title">Nossos Serviços</h2> <div class="services-grid"> <div class="card"> <i class="fas fa-video"></i> <h3>CFTV</h3> <p> Monitoramento completo com câmeras HD e acesso remoto. </p> </div> <div class="card"> <i class="fas fa-bell"></i> <h3>Alarmes</h3> <p> Sistemas modernos de alarme residencial e comercial. </p> </div> <div class="card"> <i class="fas fa-shield-alt"></i> <h3>Cerca Elétrica</h3> <p> Proteção perimetral para casas, empresas e condomínios. </p> </div> <div class="card"> <i class="fas fa-door-open"></i> <h3>Controle de Acesso</h3> <p> Biometria, tags, cartões e controle inteligente. </p> </div> <div class="card"> <i class="fas fa-house"></i> <h3>Automação</h3> <p> Automação residencial e empresarial inteligente. </p> </div> <div class="card"> <i class="fas fa-lock"></i> <h3>Portões Automáticos</h3> <p> Instalação e manutenção de motores e portões. </p> </div> </div> </div> </section> <!-- SOBRE --> <section class="about" id="sobre"> <div class="container"> <div class="about-content"> <img src="6.png" alt="Sobre a Empresa"> <div class="about-text"> <h2>Sobre a Empresa</h2> <p> A Zelo Segurança e Automação é especializada em soluções modernas de segurança eletrônica, automação e proteção residencial e empresarial. Nosso objetivo é oferecer tranquilidade, tecnologia e segurança para nossos clientes, com atendimento profissional e equipamentos de alta qualidade. </p> </div> </div> </div> </section> <!-- GALERIA --> <section class="gallery" id="galeria"> <div class="container"> <h2 class="section-title">Projetos Realizados</h2> <div class="gallery-grid"> <video width="100%" height="auto" controls> <source src="3.mp4" type="video/mp4"> </video> <img src="1.jpeg" alt="Projeto 1"> <video width="100%" height="auto" controls> <source src="5.mp4" type="video/mp4"> </video> </div> <div class="instagram"> <p>Siga nosso Instagram:</p> <a href="https://www.instagram.com/zelosegurancaeautomacao/" target="_blank"> @zelosegurancaeautomacao </a> </div> </div> </section> <!-- CONTATO --> <section class="contact" id="contato"> <div class="container"> <h2 class="section-title">Contato</h2> <div class="contact-box"> <p><i class="fab fa-whatsapp"></i> (41) 999737-5054</p> <p><i class="fas fa-envelope"></i> zelo.seguranca@gmail.com</p> <p><i class="fas fa-location-dot"></i> Brasil</p>    
+
+</div>
+
+<div class="map">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.1234567890123!2d-49.7059621!3d-25.8792311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dbf1363b64007d:0x44b52cb342c523ec!2sZELO%20Seguran%C3%A7a%20e%20Automa%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+<!-- WHATSAPP --> <a href="https://wa.me/55041997375054" class="whatsapp" target="_blank"> <i class="fab fa-whatsapp"></i> </a> </body> </html>
